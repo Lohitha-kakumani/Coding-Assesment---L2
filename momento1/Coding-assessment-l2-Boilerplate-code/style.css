@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+html,
+body {
+  height: 
+  100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  display: inline-block;
+  color: lightgrey;
+  font-size: 16px;
+  font-family: "inter";
+  white-space: nowrap;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.23);
+  color: white;
+  transform: scale(1.03);
+  text-decoration: none;
+}
+
+a:active {
+  transform: scale(0.98);
+}
+
+
+.category-tabs {
+  
+  display: flex;
+  justify-content: space-around;
+}
+
+.category-tab-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+
+}
+
+
+.heading-tag{
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.category-tabs{
+  height: 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr)); 
+  /* font-family: "Inter", sans-serif; */
+
+}
+.category-tab-button{
+  grid-column: span 4;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+
+
+
+}
+/* Select the button with the label "Men" */
+.category-tabs .category-tab-button[data-category='men'] {
+  /* Set the initial background and text color */
+  background-color: rgb(237, 237, 237);
+  color: black;
+  /* On click, keep the background and text color changed */
+  &:active, &:focus {
+    background-color: black;
+    color: white;
+  }
+}
+
+/* Select the button with the label "women" */
+.category-tabs .category-tab-button[data-category='women'] {
+  /* Set the initial background and text color */
+  background-color: rgb(237, 237, 237);
+  color: black;
+  /* On click, keep the background and text color changed */
+  &:active, &:focus {
+    background-color: black;
+    color: white;
+  }
+}
+
+/* Select the button with the label "kids" */
+.category-tabs .category-tab-button[data-category='kids'] {
+  /* Set the initial background and text color */
+  background-color: rgb(237, 237, 237);
+  color: black;
+  /* On click, keep the background and text color changed */
+  &:active, &:focus {
+    background-color: black;
+    color: white;
+  }
+}
+
+.products-container{
+  padding-top: 1.6rem;
+  width: 100%;
+  justify-content: space-around;
+}
+.cardImage{
+  height: 15rem;
+  width: 12rem;
+  border-radius: 13px;
+  margin: 5px;
+
+}
+.cardHeading{
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.ptitle {
+  font-weight: bold;
+  width: 115px; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardSubHeading{
+  margin-left: 6px;
+}
+.priceContainer{
+  display:  flex;
+  
+}
+
+.priceContainer p:first-child {
+ font-weight: bold;
+}
+.priceContainer p:nth-child(2) {
+  color: gray;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+.priceContainer p:nth-child(3) {
+  color: red;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.buttonContainer{
+  background: black;
+    color: white;
+    height: 45px;
+    border-radius: 8px;
+    width: 13rem;
+    cursor: pointer;
+}
+.buttonContainer p {
+  padding-top: 10px;
+  text-align: center;
+}
+.cardContainer{
+  width: 17rem;
+  height: 30rem;
+  margin:5px;
+}
+.container{
+  width: 80%;
+}
